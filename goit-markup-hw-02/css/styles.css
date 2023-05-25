@@ -93,7 +93,6 @@ section {
 .secondary-item:focus,
 :hover {
   border-color: var(--color);
-  fill: rgb(130, 24, 24);
 }
 
 .list-name-icon {
