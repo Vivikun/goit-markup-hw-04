@@ -8,7 +8,7 @@ body {
 :root {
   --color: rgba(33, 150, 243, 1);
   --color-back: rgba(117, 117, 117, 1);
-  --color-text: #ffffff;
+  --color-text: rgb(255, 255, 255);
   --color-box: rgba(47, 48, 58, 1);
   --color-body: rgba(33, 33, 33, 1);
   --color-image: rgb(245, 244, 250, 1);
@@ -17,6 +17,7 @@ body {
   --color-line: #ececec;
   --color-none: rgba(0, 0, 0, 1);
   --color-border: rgb(238, 238, 238);
+  --color-icone: #afb1b8;
 }
 h1,
 h2,
@@ -52,9 +53,69 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.icone {
-  color: black;
+.lorem-icone {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
+.headline-4 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-body);
+  margin-bottom: 50px;
+}
+
+.icon-list {
+  display: flex;
+  gap: 30px;
+}
+
+.icon-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.secondary-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icone);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-icone);
+}
+.secondary-item:focus,
+:hover {
+  border-color: var(--color);
+  fill: rgb(130, 24, 24);
+}
+
+.list-name-icon {
+  display: block;
+  height: 56px;
+  padding: 0 32px;
+  padding-top: 16px;
+}
+.list-icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: var(--color-icone);
+}
+.list-icon:hover,
+:focus {
+  background: var(--color);
+  border-radius: 50px;
+  fill: var(--color-text);
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
