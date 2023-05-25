@@ -79,7 +79,6 @@ section {
 .icon-list:not(:last-child) {
   margin-right: 30px;
 }
-
 .secondary-item {
   width: 170px;
   height: 92px;
@@ -90,9 +89,9 @@ section {
   justify-content: center;
   fill: var(--color-icone);
 }
-.secondary-item:focus,
-:hover {
+.secondary-item:hover {
   border-color: var(--color);
+  fill: var(--color);
 }
 
 .list-name-icon {
