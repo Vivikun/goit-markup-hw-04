@@ -52,7 +52,9 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.icone {
+  color: black;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
