@@ -66,23 +66,29 @@ section {
 }
 .socjal-list {
   display: flex;
+  gap: 10px;
 }
 .social-icon {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
-  border-radius: 44px;
+  border-radius: 50%;
   background-color: var(--color-bacgound-footer);
 }
 .social-icon:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icon:hover,
-:focus {
+.social-icon:hover {
   background: var(--color);
-  border-radius: 44px;
+  border-radius: 50%;
+  fill: var(--color-text);
+}
+.social-icon:focus {
+  background: var(--color);
+  border-radius: 50%;
   fill: var(--color-text);
 }
 
@@ -97,7 +103,6 @@ section {
 }
 
 .lorem-icone {
-  width: 270px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -141,22 +146,26 @@ section {
 }
 
 .list-name-icon {
-  display: block;
-  height: 56px;
-  padding: 0 32px;
-  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
+
 .list-icon {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   fill: var(--color-icone);
+  border-radius: 50%;
 }
-.list-icon:hover,
-:focus {
+.list-icon:hover {
   background: var(--color);
-  border-radius: 44px;
+  fill: var(--color-text);
+}
+.list-icon:focus {
+  background: var(--color);
   fill: var(--color-text);
 }
 
@@ -199,8 +208,10 @@ section {
   letter-spacing: 0.02em;
 }
 
-.link:hover,
 .link:focus {
+  color: var(--color);
+}
+.link:hover {
   color: var(--color);
 }
 
@@ -216,13 +227,14 @@ section {
   padding-bottom: 25px;
 }
 
-.logo:hover,
 .logo:focus {
   color: var(--color);
 }
+.logo:hover {
+  color: var(--color);
+}
+
 .header-item {
-  display: flex;
-  align-items: center;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -234,11 +246,13 @@ section {
   line-height: 1.1;
   letter-spacing: 0.02em;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
-.mail:hover,
 .mail:focus {
+  color: var(--color);
+}
+.mail:hover {
   color: var(--color);
 }
 
@@ -252,6 +266,7 @@ section {
     ),
     url(../../images/Tapeta.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   max-width: 1600px;
   max-height: 600px;
   margin: 0 auto;
@@ -298,8 +313,12 @@ section {
   border: none;
 }
 
-.button:hover,
 .button:focus {
+  background-color: var(--color);
+  color: var(--color-body);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button:hover {
   background-color: var(--color);
   color: var(--color-body);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -369,6 +388,7 @@ section {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .description {
@@ -417,8 +437,10 @@ section {
   color: var(--color-mail);
 }
 
-.mail-1:hover,
 .mail-1:focus {
+  color: var(--color);
+}
+.mail-1:hover {
   color: var(--color);
 }
 
@@ -433,8 +455,11 @@ section {
   color: var(--color-text);
 }
 
-.logo-0:hover,
+,
 .logo-0:focus {
+  color: var(--color);
+}
+.logo-0:hover {
   color: var(--color);
 }
 
@@ -465,8 +490,14 @@ section {
   border: none;
 }
 
-.button-1:hover,
 .button-1:focus {
+  background-color: var(--color);
+  color: var(--color-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.button-1:hover {
   background-color: var(--color);
   color: var(--color-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -536,8 +567,12 @@ section {
 .basic-item {
   display: inline-block;
 }
-.basic-item:hover,
-:focus {
+.basic-item:focus {
+  border: 1px solid var(--color-border);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.basic-item:hover {
   border: 1px solid var(--color-border);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
