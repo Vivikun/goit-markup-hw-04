@@ -14,13 +14,14 @@ body {
   --color-image: rgb(245, 244, 250, 1);
   --color-mine: rgb(230, 230, 230);
   --color-mail: rgba(255, 255, 255, 0.6);
-  --color-line: rgb(236, 236, 236);
+  --color-line: hwb(0 93% 7%);
   --color-none: rgba(0, 0, 0, 1);
   --color-border: rgb(238, 238, 238);
   --color-icone: rgb(175, 177, 184);
   --color-icone-bacground: rgb(245, 244, 250);
   --color-bacgound-footer: rgba(255, 255, 255, 0.1);
 }
+
 h1,
 h2,
 h3,
@@ -55,13 +56,12 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .footer-div {
   display: flex;
   align-items: baseline;
 }
 .social {
-  width: 206px;
-  height: 80px;
   margin-left: 70px;
 }
 .socjal-list {
@@ -76,6 +76,7 @@ section {
   height: 44px;
   border-radius: 50%;
   background-color: var(--color-bacgound-footer);
+  fill: var(--color-text);
 }
 .social-icon:not(:last-child) {
   margin-right: 10px;
@@ -99,7 +100,7 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-text);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .lorem-icone {
@@ -141,6 +142,10 @@ section {
   fill: var(--color-icone);
 }
 .secondary-item:hover {
+  border-color: var(--color);
+  fill: var(--color);
+}
+.secondary-item:focus {
   border-color: var(--color);
   fill: var(--color);
 }
@@ -455,7 +460,6 @@ section {
   color: var(--color-text);
 }
 
-,
 .logo-0:focus {
   color: var(--color);
 }
@@ -565,15 +569,14 @@ section {
   max-height: 404px;
 }
 .basic-item {
-  display: inline-block;
+  display: block;
+  color: inherit;
 }
 .basic-item:focus {
-  border: 1px solid var(--color-border);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .basic-item:hover {
-  border: 1px solid var(--color-border);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
